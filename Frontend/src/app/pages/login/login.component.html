@@ -1,0 +1,6 @@
+<div class="login-page">
+  <form class="login-form" (submit)="login()">
+    <input name="username" class="form-control" [(ngModel)]="username"/>
+    <button class="btn btn-primary btn-submit" [disabled]="!username">Login</button>
+  </form>
+</div>

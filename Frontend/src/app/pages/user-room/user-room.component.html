@@ -1,0 +1,9 @@
+<div class="user-room" *ngIf="user">
+  <div class="messages" #messageContainer>
+    <app-message *ngFor="let message of user.messasges | async" [message]="message"></app-message>
+  </div>
+  <div class="message-input">
+    <input class="form-control" [(ngModel)]="newMessage" (keydown.enter)="newMessage && sendMessage()" />
+    <button class="btn btn-sm btn-primary" (click)="sendMessage()" [disabled]="!newMessage">SEND</button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="users-list">
+  <a
+    *ngFor="let user of userService.users | async"
+    class="user"
+    [class.active]="userService.activeUsername == user.username"
+    [routerLink]="'/room/' + user.username"
+  >{{ user.fullName }} {{ user.status ? '' : '(inactive)' }}</a>
+</div>

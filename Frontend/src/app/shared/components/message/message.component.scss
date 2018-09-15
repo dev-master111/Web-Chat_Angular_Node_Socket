@@ -1,0 +1,19 @@
+.message {
+  border: 1px solid #aaa;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px;
+
+  .title {
+    display: flex;
+    margin-bottom: 5px;
+
+    .from {
+      margin-right: 10px;
+    }
+
+    .date {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin highlight {
+  background-color: #2680ff;
+  color: white;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+
+    &:hover {
+      @include highlight;
+    }
+
+    &.active {
+      @include highlight;
+    }
+  }
+}

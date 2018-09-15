@@ -1,0 +1,19 @@
+.user-room {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .messages {
+    flex: 1 0 1px;
+    overflow: auto;
+  }
+
+  .message-input {
+    display: flex;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+}
