@@ -12,7 +12,7 @@ export class SocketService {
   }
 
   initiateSocket() {
-    this.socket = io('//localhost:5001');
+    this.socket = io('//ec2-18-217-180-153.us-east-2.compute.amazonaws.com:5001');
   }
 
   initiateUsers() {

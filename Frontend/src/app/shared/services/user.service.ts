@@ -13,7 +13,7 @@ export class UserService {
   private _socket;
 
   constructor() {
-    this._socket = io('//localhost:5001');
+    this._socket = io('//ec2-18-217-180-153.us-east-2.compute.amazonaws.com:5001');
     this.waitMessages();
     this.getPreviousMessages();
   }
