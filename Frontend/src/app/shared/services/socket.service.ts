@@ -12,7 +12,7 @@ export class SocketService {
   }
 
   initiateSocket() {
-    this.socket = io('//localhost:3000');
+    this.socket = io('//localhost:5001');
   }
 
   initiateUsers() {

@@ -13,7 +13,7 @@ export class UserService {
   private _socket;
 
   constructor() {
-    this._socket = io('//localhost:3000');
+    this._socket = io('//localhost:5001');
     this.waitMessages();
     this.getPreviousMessages();
   }
